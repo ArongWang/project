@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>登录</title>
+    <%- include head %>
+</head>
+
+<body>
+    <div class="form-box">
+        <span style="text-align:center;font-size: 30px; color:rgb(93, 126, 141); font-weight:700;">Admin</span>
+        <form action="/users/login" method="POST">
+            <input type="text" name="username" value="" placeholder="请输入用户名">
+            <input type="password" name="password" value="" placeholder="请输入密码">
+            <input type="submit" name="" value="登录">
+
+        </form>
+        <div>还没有账号，<a style="text-decoration:none;color:red;" href="/regist">立即注册</a></div>
+        <div>去逛逛<a style="text-decoration:none;color:red;" href="/one">个人博客</a></div>
+
+    </div>
+</body>
+
+</html>

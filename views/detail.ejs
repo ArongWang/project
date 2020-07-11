@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>详情</title>
+    <%- include head %>
+</head>
+
+<body>
+    <div class="detail">
+        <div class="title">
+            <%= item.title %>
+        </div>
+        <div>
+            <span>作者：<%= item.username %></span>
+            <span>发布时间：<%= item.time %></span>
+        </div>
+        <div class="desc">
+            <%- item.content %>
+        </div>
+    </div>
+
+</body>
+
+</html>

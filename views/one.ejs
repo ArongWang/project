@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>首页_个人博客网站</title>
+    <%- include haad %>
+</head>
+
+<body>
+    <header>
+        <div class="tophead ">
+            <div class="logo "><a>王卓De个人博客</a>
+
+            </div>
+        </div>
+    </header>
+    <div class="picshow ">
+        <ul>
+            <li><a><i><img src="/images/b01.jpg "></i>
+      <div class="font ">
+        <h3>笔记</h3>
+      </div>
+      </a></li>
+            <li><a><i><img src="/images/b02.jpg "></i>
+      <div class="font ">
+        <h3>笔记</h3>
+      </div>
+      </a></li>
+            <li><a><i><img src="/images/b03.jpg "></i>
+      <div class="font ">
+        <h3>笔记</h3>
+      </div>
+      </a></li>
+            <li><a><i><img src="/images/b04.jpg "></i>
+      <div class="font ">
+        <h3>笔记</h3>
+      </div>
+      </a></li>
+            <li><a><i><img src="/images/b05.jpg "></i>
+      <div class="font ">
+        <h3>笔记</h3>
+      </div>
+      </a></li>
+    </div>
+    <article>
+        <!-- liste.map(function(item,index){
+
+        }) -->
+        <div class="blogs ">
+            <% liste.map(function(item,index){ %>
+                <li> <span class="blogpic "><a><img src="/images/text02.jpg "></a></span>
+                    <h3 class="blogtitle ">
+                        <a href="detail?id=<%=item.id%>">
+                            <%= item.title %>
+                        </a>
+                    </h3>
+                    <div class="bloginfo ">
+                        <p>部分内容</p>
+                    </div>
+                    <div class="autor "><span class="lm "><a title="CSS3|Html5 " target="_blank " class="classname ">精选文章</a></span><span class="dtime "><%= item.time %> </span></div>
+                </li>
+                <% }) %>
+
+        </div>
+        <div class="sidebar ">
+            <div class="about ">
+                <div class="avatar "> <img src="/images/avatar.jpg " alt=" "> </div>
+                <p class="abname "><a href="/login ">admin</a></p>
+                <p class="abposition ">王卓</p>
+                <div class="abtext "> 在个人博客上分享一些有关Web前端的技术心得，搭建多来留言，该博客基于node.js搭建，使用html5、css3、ES新增加的语法规范 </div>
+            </div>
+            <div class="cloud ">
+                <h2 class="hometitle ">技术相关</h2>
+                <ul>
+                    <a>css3</a> <a>html5</a> <a>node.js</a> <a>sun</a> <a>青春</a> <a>温暖</a> <a>阳光</a> <a>爱您</a><a>node.js</a> <a>ES6</a> <a>javascript</a> <a>mongodb数据库</a>
+                </ul>
+            </div>
+            <div class="paihang ">
+                <h2 class="hometitle ">推荐文章</h2>
+                <ul>
+                    <li><b><a href="https://www.cnblogs.com/LoveOrHate/p/4486122.html">NodeJs教程(介绍总结！)终于在网上找到一个靠谱点的了T_T</a></b>
+                        <p><i><img src="/images/t02.jpg "></i>最近总是被要求要nodeJS，坚决不会去碰的。。。天生对cmd命令觉得无比的高大上，尽管一直在用git版本控制器！然后我也和估计和看此文的小白们同一起点，如果有node大神，跪求传授必杀技，吐槽完毕！...</p>
+                    </li>
+                    <li><b><a href="https://www.cnblogs.com/LoveOrHate/p/4786939.html"> HTML5音乐播放器</a></b>
+                        <p><i><img src="/images/b03.jpg "></i> HTML5音乐播放器 HTML5音乐播放器 HTML5音乐播放器 HTML5音乐播放器 HTML5音乐播放器 HTML5音乐播放器 HTML5音乐播放器...</p>
+                    </li>
+                    <li><b><a>javascript简单的认识下return语句</a></b>
+                        <p><i><img src="/images/b04.jpg "></i>今天突然想到了偶的徒弟上次说貌似不会用return.....当然啦，我不教他也不会。。。呵呵哒。...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <div class="blank "></div>
+    <footer>
+        <p>by <a>个人博客</a> <a>豫ICP备20003786号</a></p>
+    </footer>
+</body>
+
+</html>
